@@ -18,7 +18,7 @@ console.log('What operation would you like to perform?\n1) Add 2) Subtract 3) Mu
 let operation = readline.question();
 
 let output;
-switch(operation){
+switch (operation) {
   case '1':
     output = Number(number1) + Number(number2);
     break;
