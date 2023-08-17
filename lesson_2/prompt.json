@@ -1,0 +1,12 @@
+{
+  "startup" : "Welcome to Calculator!",
+  "first" : "What is the first number?",
+  "second" : "What is the second number?",
+  "invalid" : "Hmm.. that doesn't seem like a valid number.",
+  "operation" : "What operation would you like to perform?\n1) Add 2) Subtract 3)Multiply 4)Divide",
+  "must" : "Must choose 1, 2, 3, or 4",
+  "answer" : "The result is ",
+  "pressAny" : "Press any key to use calculator again, or press q to quit",
+  "goodbye" : "Goodbye!",
+  "startUp" : "... Starting Calculator again."
+}
