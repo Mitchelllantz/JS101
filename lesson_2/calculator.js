@@ -10,40 +10,46 @@ let quit = 'a';
 
 const MESSAGES = require('./prompt.json');
 
-function prompt(message) {
-  console.log(`=> ${message}`);
+const LANGUAGE = 'GM';
+
+function messages(message, lang) {
+  return MESSAGES[lang][message];
 }
 
+function prompt(key) {
+  let message = messages(key, LANGUAGE);
+  console.log(`=> ${message}`);
+}
 
 function invalidNumber(number) {
   return number.trimStart() === '' || Number.isNaN(Number(number));
 }
 
-prompt(MESSAGES.startup);
+prompt('startup');
 
 while (quit[0].toLowerCase() !== 'q') {
 
-  prompt(MESSAGES.first);
+  prompt('first');
   let number1 = readline.question();
 
   while (invalidNumber(number1)) {
-    prompt(MESSAGES.invalid);
+    prompt('invalid');
     number1 = readline.question();
   }
 
-  prompt(MESSAGES.second);
+  prompt('second');
   let number2 = readline.question();
 
   while (invalidNumber(number2)) {
-    prompt(MESSAGES.invalid);
+    prompt('invalid');
     number2 = readline.question();
   }
 
-  prompt(MESSAGES.operation);
+  prompt('operation');
   let operation = readline.question();
 
   while (!['1', '2', '3', '4'].includes(operation)) {
-    prompt(MESSAGES.must);
+    prompt('must');
     operation = readline.question();
   }
 
@@ -63,10 +69,10 @@ while (quit[0].toLowerCase() !== 'q') {
       break;
   }
 
-  prompt(MESSAGES.answer + output);
-
-  prompt(MESSAGES.pressAny);
+  prompt('answer');
+  console.log(output);
+  prompt('pressAny');
   quit = readline.question();
   // eslint-disable-next-line no-unused-expressions
-  quit[0].toLowerCase() === 'q' ? prompt(MESSAGES.goodbye) : prompt(MESSAGES.startUp);
+  quit[0].toLowerCase() === 'q' ? prompt('goodbye') : prompt('startUp');
 }

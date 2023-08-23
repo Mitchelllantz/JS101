@@ -1,12 +1,39 @@
 {
-  "startup" : "Welcome to Calculator!",
-  "first" : "What is the first number?",
-  "second" : "What is the second number?",
-  "invalid" : "Hmm.. that doesn't seem like a valid number.",
-  "operation" : "What operation would you like to perform?\n1) Add 2) Subtract 3)Multiply 4)Divide",
-  "must" : "Must choose 1, 2, 3, or 4",
-  "answer" : "The result is ",
-  "pressAny" : "Press any key to use calculator again, or press q to quit",
-  "goodbye" : "Goodbye!",
-  "startUp" : "... Starting Calculator again."
+  "EN": {
+    "startup": "Welcome to Calculator!",
+    "first": "What is the first number?",
+    "second": "What is the second number?",
+    "invalid": "Hmm.. that doesn't seem like a valid number.",
+    "operation": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+    "must": "Must choose 1, 2, 3, or 4",
+    "answer": "The result is ",
+    "pressAny": "Press any key to use calculator again, or press q to quit",
+    "goodbye": "Goodbye!",
+    "startUp": "... Starting Calculator again."
+  },
+  "SP": {
+    "startup": "¡Bienvenido a la Calculadora!",
+    "first": "¿Cuál es el primer número?",
+    "second": "¿Cuál es el segundo número?",
+    "invalid": "Hmm... eso no parece ser un número válido.",
+    "operation": "¿Qué operación te gustaría realizar?\n1) Sumar 2) Restar 3) Multiplicar 4) Dividir",
+    "must": "Debes elegir 1, 2, 3 o 4",
+    "answer": "El resultado es ",
+    "pressAny": "Presiona cualquier tecla para usar la calculadora nuevamente, o presiona q para salir",
+    "goodbye": "¡Adiós!",
+    "startUp": "... Iniciando la calculadora nuevamente."
+  },
+  "GM": {
+    "startup": "Willkommen bei Taschenrechner!",
+    "first": "Was ist die erste Zahl?",
+    "second": "Was ist die zweite Zahl?",
+    "invalid": "Hmm... das scheint keine gültige Nummer zu sein.",
+    "operation": "Welche Operation möchtest du durchführen?\n1) Addieren 2) Subtrahieren 3) Multiplizieren 4) Dividieren",
+    "must": "Du musst 1, 2, 3 oder 4 wählen",
+    "answer": "Das Ergebnis ist ",
+    "pressAny": "Drücke eine beliebige Taste, um den Taschenrechner erneut zu verwenden, oder drücke q, um zu beenden",
+    "goodbye": "Auf Wiedersehen!",
+    "startUp": "... Starte den Taschenrechner erneut."
+  }
 }
+
