@@ -2,7 +2,7 @@ let rlsync = require('readline-sync');
 const MESSAGE = require('./messagesForMortgageCalculator.json');
 
 let prompt = (message) => {
-  console.log(`${message}`)
+  console.log(`${message}`);
 };
 
 let message = (messages) => {

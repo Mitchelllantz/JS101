@@ -70,7 +70,7 @@ while (true) {
   prompt('answer');
   console.log(output);
   prompt('pressAny');
-  quit = readline.question();
+  let quit = readline.question();
   if (quit === 'q') {
     prompt('goodbye');
     break;
