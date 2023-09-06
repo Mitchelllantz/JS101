@@ -1,0 +1,11 @@
+{ 
+  "greeting" : "Welcome to the mortgage calculator program.",
+  "name" : "What is your name?",
+  "invalid" : "Hmm... it looks like thats and ivalid number, please enter a number",
+  "loanAmount" : "What is the amount you are borrowing?",
+  "loanLength" : "What is the length of your loan in months?",
+  "interestRate" : "What is your interest rate as an APR percentage?",
+  "calculation" : " your monthly payment will be: $",
+  "quit" : "Press any key to make another calculation, or press 'q' to quit.",
+  "goodbye" : "Goodbye!"
+}

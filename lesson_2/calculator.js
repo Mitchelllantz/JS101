@@ -6,11 +6,9 @@
 
 const readline = require('readline-sync');
 
-let quit = 'a';
-
 const MESSAGES = require('./prompt.json');
 
-const LANGUAGE = 'GM';
+const LANGUAGE = 'EN';
 
 function messages(message, lang) {
   return MESSAGES[lang][message];
@@ -27,7 +25,7 @@ function invalidNumber(number) {
 
 prompt('startup');
 
-while (quit[0].toLowerCase() !== 'q') {
+while (true) {
 
   prompt('first');
   let number1 = readline.question();
@@ -73,6 +71,8 @@ while (quit[0].toLowerCase() !== 'q') {
   console.log(output);
   prompt('pressAny');
   quit = readline.question();
-  // eslint-disable-next-line no-unused-expressions
-  quit[0].toLowerCase() === 'q' ? prompt('goodbye') : prompt('startUp');
+  if (quit === 'q') {
+    prompt('goodbye');
+    break;
+  }
 }
