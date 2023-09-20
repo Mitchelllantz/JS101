@@ -39,12 +39,12 @@ function promptInvalidChoice() {
 }
 
 function getAndValidateChoice() {
-  let choice = READLINE.question().toLowerCase;
+  let choice = READLINE.question();
   while (!Object.values(VALID_CHOICES).includes(choice) &&
     !Object.keys(VALID_CHOICES).includes(choice)) {
     promptInvalidChoice();
     promptForPlayerChoice();
-    choice = READLINE.question().toLowerCase;
+    choice = READLINE.question();
   }
   return choice;
 }
@@ -59,7 +59,7 @@ function convertPlayerChoice(playerChoice) {
 
 function getComputerChoice() {
   let randomIndex =
-  Math.floor(Math.random() * Object.values(VALID_CHOICES).length);
+    Math.floor(Math.random() * Object.values(VALID_CHOICES).length);
   return Object.values(VALID_CHOICES)[randomIndex];
 }
 
@@ -148,6 +148,7 @@ while (playAgain === 'y') {
     let choice = convertPlayerChoice(getAndValidateChoice());
     let computerChoice = getComputerChoice();
     let winner = getWinner(choice, computerChoice);
+    clearScreen();
     displayWinner(choice, computerChoice);
     updateScore(winner);
     displayScore();
