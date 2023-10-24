@@ -1,7 +1,8 @@
 let numbers = [1, 2, 3, 4];
 
-numbers.forEach(num => numbers.pop[num]);
-for(let i = 0; i < numbers.length; i++) {
-    numbers[i].pop;
-}
+//for(let i = 0; i < 4; i++) {
+//    numbers.pop();
+//}
+//while (typeof (numbers.shift()) !== "undefined"){}
+numbers.length = 0;
 console.log(numbers);
